@@ -7,6 +7,7 @@ I'm deploying the page on vercel but if you need to run the application locally 
 Use the following env variables in your env.local file at the root of the application. 
 
 APPLICATION_ID=1K2RO6O41T
+
 API_KEY=3ecd6c764abb820bc58886f5c6eb21b8
 
 ############################################################

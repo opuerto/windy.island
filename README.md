@@ -1,3 +1,16 @@
+## IMPORTANT NOTE 
+
+I have decided to not mock the data but use a search engine https://www.algolia.com/, I hope it will not fail while you use the page 🤞🏽.
+
+I'm deploying the page on vercel but if you need to run the application locally you will need to set some env variables. 
+
+Use the following env variables in your env.local file at the root of the application. 
+
+APPLICATION_ID=1K2RO6O41T
+API_KEY=3ecd6c764abb820bc58886f5c6eb21b8
+
+############################################################
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

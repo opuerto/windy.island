@@ -9,6 +9,8 @@ const plpIndex = algoliaClient.initIndex(
   "prod_MOCK_DATA"
 );
 
+const pdpIndex = algoliaClient.initIndex("prod_MOCK_DATA_PDP");
+
 
 const search = async (query?: string) => {
   const term = query || "*";
@@ -18,4 +20,11 @@ const search = async (query?: string) => {
   return res;
 }
 
-export { search }
+const getProduct = async (id: string) => {
+  const res = await pdpIndex.search("",{
+    filters: `id=${id}`
+  });
+  return res;
+}
+
+export { search, getProduct }

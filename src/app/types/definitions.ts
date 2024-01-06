@@ -7,6 +7,13 @@ export interface ProductListItemsPropsInterface {
   query: string;
 }
 
+
+export interface ProductDetailPagePropsInterface {
+  params: {
+    id: string;
+  };
+}
+
 export interface ProductCardPropsInterface {
   product: ProductInteface;
 }
@@ -16,6 +23,7 @@ export interface ProductInteface {
   name: string;
   brand: string;
   capacity: string;
+  description?: string;
   price: number;
   image: string;
 }
@@ -23,3 +31,5 @@ export interface ProductInteface {
 export interface MockDataResponseInterface {
   hits: ProductInteface[];
 }
+
+

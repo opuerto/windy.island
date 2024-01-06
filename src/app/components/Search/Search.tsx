@@ -30,24 +30,19 @@ export default function Search() {
   };
 
   return (
-    <div className="mt-4">
-      <div className="relative mb-4 flex w-full flex-wrap items-stretch">
-        <input
-          type="search"
-          className="relative m-0 -mr-0.5 block min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-white bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-          placeholder="Search"
-          aria-label="Search"
-          onChange={handleQueryChange}
-          aria-describedby="button-addon3" />
-        <button
-          className="relative z-[2] bg-white rounded-r border-2 border-primary px-6 py-2 text-xs font-medium uppercase text-primary transition duration-150 ease-in-out"
-          type="button"
-          id="button-addon3"
-          onClick={handleSearch}
-          >
-          Search
-        </button>
-      </div>
+    
+<div className="mt-3">   
+    <label  className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div className="relative">
+        <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" onChange={handleQueryChange} id="default-search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50  dark:placeholder-gray-400 dark:text-white" placeholder="Search..." required />
+        <button type="button" onClick={handleSearch} className="text-white absolute end-2.5 bottom-2.5 bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2  dark:hover:bg-gray-700">Search</button>
     </div>
+</div>
+
   )
 }

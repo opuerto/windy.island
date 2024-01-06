@@ -40,11 +40,11 @@ export default function Search() {
           onChange={handleQueryChange}
           aria-describedby="button-addon3" />
         <button
-          className="relative z-[2] bg-white rounded-r border-2 border-primary px-6 py-2 text-xs font-medium uppercase text-primary transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+          className="relative z-[2] bg-white rounded-r border-2 border-primary px-6 py-2 text-xs font-medium uppercase text-primary transition duration-150 ease-in-out"
           type="button"
           id="button-addon3"
           onClick={handleSearch}
-          data-te-ripple-init>
+          >
           Search
         </button>
       </div>

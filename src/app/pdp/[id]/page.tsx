@@ -3,7 +3,7 @@ import { getProduct } from '@/app/api/algoliaAPI/algoliaAPI';
 import Image from 'next/image';
 
 export default async function PoductPage({ params }: ProductDetailPagePropsInterface) {
-
+  
   const fetchProduct = async (): Promise<any> => {
     const response = await getProduct(params.id);
 
